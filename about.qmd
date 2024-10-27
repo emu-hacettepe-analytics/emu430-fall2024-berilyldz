@@ -5,26 +5,38 @@ sidebar: false
 
 # Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+B.S., Industrial Engineering, Hacettepe University, Turkey, 2023 - ongoing.
 
-# Work Experience
-
-## Employements
-
-1.  Firm xxx, position xx, year xxx
-
-2.  Firm yyy, position yyy, year yyy
+# Experience
 
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
+1.  HUGO BOSS Tekstil Sanayi Limited Şirketi (HUGO BOSS Textile Industry Limited Company), Supply Chain - Logistics and Planning Intern, 2024
 
-2.  Firm bbb, position yyy, year yyy
+2.  Vestel Elektronik Sanayi ve Ticaret AŞ (Vestel Electronics Industry and Trade Inc.), Test Engineer Intern, 2023
 
-# Projects
+3.  DVLX R&D, PCB Design Engineer Intern, 2022
 
-# Competencies
+# Volunteer Experience
 
-R, Quarto, Git, Python
+1.  OpenSpace Foundation, International Volunteer, 2022
 
-# Hobbies
+2.  Koruncuk/Turkish Foundation for Children in Need of Protection, Teacher Assistant, 2021
+
+# Skills & Certifications
+
+## Programming
+
+R, Quarto, Git, Python, SAP MM & PP Modules, MySQL, MS Office
+
+## Languages
+
+Turkish (Native), English (Proficient), German (Intermediate), Spanish (Basic)
+
+## Certifications
+
+EU Youthpass Certificate, Yetkin Gençler 21st-Century Competencies Program Certificate
+
+# Interests
+
+Mountaineering, Swimming, Diving
