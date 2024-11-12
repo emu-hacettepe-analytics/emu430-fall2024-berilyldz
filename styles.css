@@ -117,7 +117,7 @@ body {
   font-size: 14px;
 }
 
-/* Customizations for Dark Theme */
+/* Dark Theme Customizations */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #2e2e2e;
@@ -141,6 +141,12 @@ body {
     background-color: #444;
     color: #ffffff;
   }
+
+  /* Update the "coursework" section to match the dark theme */
+  .coursework-bar {
+    background-color: #3a3f51; /* Dark background for the coursework section */
+    color: #ffffff; /* White text */
+  }
 }
 
 /* Responsiveness */
@@ -152,5 +158,10 @@ body {
 
   .navbar {
     text-align: center;
+  }
+
+  .coursework-bar {
+    background-color: #3a3f51; /* Ensure coursework bar has dark background on smaller screens */
+    color: #ffffff;
   }
 }

@@ -1,105 +1,167 @@
-/* General Website Style */
+/* Base settings for overall structure */
 body {
-  font-family: 'Arial', sans-serif; /* Customize the main font */
-  color: #333; /* General text color */
-  background-color: #f9f9f9; /* Light background color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/* Navbar Styling */
+/* Header/Navbar Styling */
 .navbar {
-  background-color: #005f73; /* Dark teal background */
-  color: #ffffff; /* White text color */
+  background-color: #3a3f51;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar a {
-  color: #ffffff; /* Navbar link color */
+.navbar a, .navbar .menu-item {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
 }
 
-.navbar a:hover {
-  color: #ffa726; /* Hover color for links */
+.navbar a:hover, .navbar .menu-item:hover {
+  background-color: #575d70;
+  transition: background-color 0.3s;
+}
+
+.navbar .github-icon, .navbar .linkedin-icon {
+  color: #f0f0f0;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.navbar .github-icon:hover, .navbar .linkedin-icon:hover {
+  color: #d3d3d3;
 }
 
 /* Sidebar Styling */
 .sidebar {
-  background-color: #e0e0e0; /* Light gray background */
-  padding: 15px; /* Padding for better spacing */
-  border-right: 2px solid #005f73; /* Border to match navbar */
+  background-color: #eeeeee;
+  padding: 20px;
+  width: 250px;
 }
 
-.sidebar .title {
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #005f73; /* Match navbar color */
+.sidebar h3 {
+  color: #3a3f51;
+  font-size: 18px;
+  border-bottom: 2px solid #3a3f51;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
-/* Sidebar links */
 .sidebar a {
   color: #333;
+  display: block;
+  padding: 8px 10px;
+  text-decoration: none;
 }
 
 .sidebar a:hover {
-  color: #ffa726; /* Highlight sidebar links on hover */
+  background-color: #ddd;
+  color: #3a3f51;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Page Navigation */
+.page-navigation {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #3a3f51;
+  border-radius: 50%;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-navigation:hover {
+  background-color: #575d70;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Back-to-Top Button */
+.back-to-top-navigation {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3a3f51;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  text-align: center;
+}
+
+.back-to-top-navigation:hover {
+  background-color: #575d70;
 }
 
 /* Footer Styling */
 .page-footer {
-  background-color: #005f73;
+  background-color: #333333;
   color: #ffffff;
-  padding: 10px 0;
+  padding: 20px;
   text-align: center;
-  border-top: 3px solid #ffa726; /* Orange top border */
+  border-top: 2px solid #575d70;
 }
 
-.page-footer a {
-  color: #ffa726; /* Footer link color */
+.page-footer p {
+  margin: 0;
+  font-size: 14px;
 }
 
-.page-footer a:hover {
-  color: #ffffff; /* Footer link hover color */
+/* Dark Theme Customizations */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #2e2e2e;
+    color: #d0d0d0;
+  }
+
+  .navbar, .page-footer {
+    background-color: #1c1c1c;
+    color: #d0d0d0;
+  }
+
+  .sidebar {
+    background-color: #2a2a2a;
+  }
+
+  .sidebar a {
+    color: #d0d0d0;
+  }
+
+  .sidebar a:hover {
+    background-color: #444;
+    color: #ffffff;
+  }
+
+  /* Update the "coursework" section to match the dark theme */
+  .coursework-bar {
+    background-color: #3a3f51; /* Dark background for the coursework section */
+    color: #ffffff; /* White text */
+  }
 }
 
-/* Table of Contents */
-.toc {
-  background-color: #f5f5f5;
-  border-left: 3px solid #005f73;
-  padding: 10px;
-}
+/* Responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    display: none;
+  }
 
-.toc a {
-  color: #005f73;
-}
+  .navbar {
+    text-align: center;
+  }
 
-.toc a:hover {
-  color: #ffa726;
-}
-
-/* Custom Button Style */
-button, .btn {
-  background-color: #005f73;
-  color: #ffffff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-}
-
-button:hover, .btn:hover {
-  background-color: #ffa726;
-}
-
-/* Customize code blocks */
-code, pre {
-  background-color: #e0e0e0;
-  color: #333;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-/* Back-to-Top Button */
-.back-to-top {
-  background-color: #005f73;
-  color: #ffffff;
-}
-
-.back-to-top:hover {
-  background-color: #ffa726;
+  .coursework-bar {
+    background-color: #3a3f51; /* Ensure coursework bar has dark background on smaller screens */
+    color: #ffffff;
+  }
 }
