@@ -2,15 +2,15 @@
 title: "Assignment 1"
 ---
 
-# Assignment 1
-
 My first assignment has two parts.
 
-## (a)
+## (a) Summary of a chosen video
 
-## (b)
+**Choose a video from one of the following sources and provide a brief summary.**
 
--   Import the “polls_us_election_2016” data set from the dslabs package.
+## (b) Completing the following tasks
+
+**Import the “polls_us_election_2016” data set from the dslabs package.**
 
 ```{r}
 
@@ -18,7 +18,7 @@ library(dslabs)
 data("polls_us_election_2016")
 ```
 
--   Display the first 10 rows of the data set on your web page.
+**Display the first 10 rows of the data set on your web page.**
 
 ```{r}
 
@@ -26,7 +26,7 @@ first_ten_row <- head(polls_us_election_2016, 10)
 first_ten_row
 ```
 
--   Calculate and display the total number of NA values in the entire data set.
+**Calculate and display the total number of NA values in the entire data set.**
 
 ```{r}
 
@@ -34,7 +34,7 @@ number_of_nas <- sum(is.na(polls_us_election_2016))
 number_of_nas
 ```
 
--   Replace all NA values in the “polls_us_election_2016” data set as follows: For numeric xs, replace NA values with your birth year. For character or factor xs, replace NA values with your first name. Store the modified data set as a new object.
+**Replace all NA values in the “polls_us_election_2016” data set as follows: For numeric xs, replace NA values with your birth year. For character or factor xs, replace NA values with your first name. Store the modified data set as a new object.**
 
 ```{r}
 
@@ -67,8 +67,6 @@ replace_na <- function(x) {
 polls_us_election_2016_modified <- as.data.frame(
   lapply(polls_us_election_2016, replace_na)
 )
-
-polls_us_election_2016_modified
 ```
 
 ```{r}
@@ -111,7 +109,7 @@ replace_na <- function(x) {
 
 This function replaces the NA values with the appropriate variables. The if condition checks if the column is numeric. If it is numeric, the function evaluates and returns a logical value. If the value is TRUE (which corresponds to NA), it replaces the NA with the *birth_year*.
 
-The else if part checks if the column is a factor. If it is, the code inside the block is executed. Typically, factors and characters need to be treated in a similar way when manipulating categorical data. The first step is to convert all factor values to characters using the *as.character* function. Then, the NA values are replaced with *first_name* as done previously. After replacing the NA values, we can convert the column back to a factor using *as.factor()* if needed.
+The else if part checks if the column is a factor. If it is, the code inside the block is executed. The first step is to convert all factor values to characters using the *as.character* function. Then, the NA values are replaced with *first_name* as done previously. After replacing the NA values, we can convert the column back to a factor using *as.factor()* if needed.
 
 If the column is already of type character, it is handled similarly to a factor. The NA values are replaced with *first_name.*
 
@@ -124,3 +122,10 @@ polls_us_election_2016_modified <- as.data.frame(
 ```
 
 The *lapply()* function is used to apply the replacement function to each column of the *polls_us_election_2016_modified* data frame. Afterward, it is converted back into a data frame using the *as.data.frame()* function.
+
+**Print the first 10 rows of the new data frame and the total number of NAs remaining in the new data frame.**
+
+```{r}
+
+head(polls_us_election_2016_modified, 10)
+```
