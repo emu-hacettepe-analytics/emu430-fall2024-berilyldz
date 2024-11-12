@@ -1,6 +1,4 @@
 ---
-
----
 title: "Assignment 1"
 ---
 
@@ -103,9 +101,9 @@ replace_na <- function(x) {
     x[is.na(x)] <- first_name
     # Optionally, convert back to factor
     x <- as.factor(x)
-  } else if (is.character(column)) {
+  } else if (is.character(x)) {
     # If it's already a character column, just replace NAs
-    column[is.na(column)] <- first_name
+    x[is.na(x)] <- first_name
   }
   return(x)
 }
