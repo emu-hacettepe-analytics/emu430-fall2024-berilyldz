@@ -1,1 +1,105 @@
-/* css styles */
+/* General Website Style */
+body {
+  font-family: 'Arial', sans-serif; /* Customize the main font */
+  color: #333; /* General text color */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #005f73; /* Dark teal background */
+  color: #ffffff; /* White text color */
+}
+
+.navbar a {
+  color: #ffffff; /* Navbar link color */
+}
+
+.navbar a:hover {
+  color: #ffa726; /* Hover color for links */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: #e0e0e0; /* Light gray background */
+  padding: 15px; /* Padding for better spacing */
+  border-right: 2px solid #005f73; /* Border to match navbar */
+}
+
+.sidebar .title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #005f73; /* Match navbar color */
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #333;
+}
+
+.sidebar a:hover {
+  color: #ffa726; /* Highlight sidebar links on hover */
+}
+
+/* Footer Styling */
+.page-footer {
+  background-color: #005f73;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 3px solid #ffa726; /* Orange top border */
+}
+
+.page-footer a {
+  color: #ffa726; /* Footer link color */
+}
+
+.page-footer a:hover {
+  color: #ffffff; /* Footer link hover color */
+}
+
+/* Table of Contents */
+.toc {
+  background-color: #f5f5f5;
+  border-left: 3px solid #005f73;
+  padding: 10px;
+}
+
+.toc a {
+  color: #005f73;
+}
+
+.toc a:hover {
+  color: #ffa726;
+}
+
+/* Custom Button Style */
+button, .btn {
+  background-color: #005f73;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+button:hover, .btn:hover {
+  background-color: #ffa726;
+}
+
+/* Customize code blocks */
+code, pre {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Back-to-Top Button */
+.back-to-top {
+  background-color: #005f73;
+  color: #ffffff;
+}
+
+.back-to-top:hover {
+  background-color: #ffa726;
+}
